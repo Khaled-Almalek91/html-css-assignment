@@ -1,0 +1,23 @@
+header {
+    background-color: #F0EFE9;
+    display: flex;
+    padding: 10px;
+
+    .container{
+        display: flex;
+        border: 1px solid black;
+
+        @media (min-width:2500px) {
+            max-width: 2048px;
+            
+        }
+
+    
+    }
+
+
+
+
+
+
+}
