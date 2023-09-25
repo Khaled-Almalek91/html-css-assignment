@@ -1,7 +1,6 @@
 header {
   background-color: #F0EFE9;
-  display: flex;
-  padding: 10px;
+  padding: 16px;
 }
 header .container {
   display: flex;
@@ -11,4 +10,7 @@ header .container {
   header .container {
     max-width: 2048px;
   }
+}
+header .container .menu {
+  display: none;
 }

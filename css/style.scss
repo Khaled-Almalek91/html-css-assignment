@@ -1,7 +1,7 @@
 header {
     background-color: #F0EFE9;
-    display: flex;
-    padding: 10px;
+    //display: flex;
+    padding: 16px;
 
     .container{
         display: flex;
@@ -9,7 +9,9 @@ header {
 
         @media (min-width:2500px) {
             max-width: 2048px;
-            
+        }
+        .menu {
+            display: none;
         }
 
     
