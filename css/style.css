@@ -4,13 +4,23 @@ header {
 }
 header .container {
   display: flex;
-  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+header .container .menu-bars {
+  font-size: 25px;
+}
+header .container .menu {
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
 }
 @media (min-width: 2500px) {
   header .container {
     max-width: 2048px;
   }
-}
-header .container .menu {
-  display: none;
 }
