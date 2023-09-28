@@ -5,6 +5,21 @@ html , body {
     font-size: 16px;
     font-weight: 400;
 }
+.btn-yellow {
+    background-color: #f9d783;
+    border: 1px solid #f9d783;
+    color: #191919;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i{
+        margin-left: 8px;
+        font-size: 0.8em;
+    }
+}
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -47,7 +62,7 @@ header {
                     i {
                         margin-right: 5px;
                         font-size: 1.2em;
-                        color: #666666;
+                        
                     }
                 &.last {
                     border-right: none;
@@ -86,6 +101,14 @@ header {
                     color: #191919;
                     text-decoration: none;
                     margin-right: 30px;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }

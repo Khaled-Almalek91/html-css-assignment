@@ -6,6 +6,21 @@ html, body {
   font-weight: 400;
 }
 
+.btn-yellow {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-yellow i {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -51,7 +66,6 @@ header .container .menu .top-menu .contact-information .content-box {
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
   font-size: 1.2em;
-  color: #666666;
 }
 header .container .menu .top-menu .contact-information .content-box.last {
   border-right: none;
@@ -74,4 +88,10 @@ header .container .menu .main-menu nav a {
   color: #191919;
   text-decoration: none;
   margin-right: 30px;
+}
+header .container .menu .main-menu nav a.active {
+  font-weight: 500;
+}
+header .container .menu .main-menu nav a:hover {
+  text-decoration: underline;
 }
