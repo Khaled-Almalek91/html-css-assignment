@@ -19,6 +19,11 @@ html , body {
         margin-left: 8px;
         font-size: 0.8em;
     }
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919 ;
+        color: #F0EFE9;
+    }
 }
 header {
     background-color: #F0EFE9;
@@ -31,8 +36,10 @@ header {
         gap: 70px;
         
         
+        
         .menu {
             display: none;
+            flex: 1;
             @media (min-width : 992px){
                 display: block;
 
@@ -90,31 +97,65 @@ header {
            
             }
        
-        .main-menu {
+         .main-menu {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: 10px;
 
+
             nav {
                 a{
+                    display: inline-block;
                     color: #191919;
                     text-decoration: none;
                     margin-right: 30px;
+                    position: relative;
 
                     &.active {
                         font-weight: 500;
                     }
 
-                    &:hover{
-                        text-decoration: underline;
+                    &.active::after ,
+                    &:hover::after{
+                        content: "";
+                        position: absolute;
+                        font-weight: 500;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;  
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px) ));
+
                     }
+
+                    
                 }
             }
         }
         
-        }
-       
     }
+       
+}
+
+}
+
+.showcase {
+
+    .container{
+        
+        .content {
+
+        }
+
+        img {
+
+            ;
+        }
+
+    }
+
+
 
 }

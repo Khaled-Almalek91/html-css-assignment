@@ -20,6 +20,11 @@ html, body {
   margin-left: 8px;
   font-size: 0.8em;
 }
+.btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
 
 header {
   background-color: #F0EFE9;
@@ -33,6 +38,7 @@ header .container {
 }
 header .container .menu {
   display: none;
+  flex: 1;
 }
 @media (min-width: 992px) {
   header .container .menu {
@@ -85,13 +91,23 @@ header .container .menu .main-menu {
   padding-top: 10px;
 }
 header .container .menu .main-menu nav a {
+  display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 30px;
+  position: relative;
 }
 header .container .menu .main-menu nav a.active {
   font-weight: 500;
 }
-header .container .menu .main-menu nav a:hover {
-  text-decoration: underline;
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
