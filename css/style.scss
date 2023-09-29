@@ -176,6 +176,17 @@ header {
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
                 font-size: 86px;
+                
+                @media (min-width : 1200px) {
+                    font-size: 66px;
+
+                }
+
+                @media (min-width : 1400px) {
+                    font-size: 86px;
+
+                }
+            
 
             }
 
@@ -195,6 +206,7 @@ header {
         }
 
         img {
+            margin-right: -50px;
 
             
         }

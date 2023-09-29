@@ -146,6 +146,16 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-weight: 700;
   font-size: 86px;
 }
+@media (min-width: 1200px) {
+  .showcase .container .content h1 {
+    font-size: 66px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content h1 {
+    font-size: 86px;
+  }
+}
 .showcase .container .content p {
   font-size: 20px;
   padding-top: 40px;
@@ -153,4 +163,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .showcase .container .content a {
   margin-right: 10px;
+}
+.showcase .container img {
+  margin-right: -50px;
 }
