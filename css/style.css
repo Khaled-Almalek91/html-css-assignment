@@ -57,6 +57,16 @@ header .container {
   justify-content: space-between;
   gap: 70px;
 }
+header .container .menu-bars {
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
 header .container .menu {
   display: none;
   flex: 1;
@@ -73,14 +83,25 @@ header .container .menu {
 }
 header .container .menu .top-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid rgba(175, 171, 171, 0.726);
   padding-bottom: 10px;
 }
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
 header .container .menu .top-menu .contact-information {
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 header .container .menu .top-menu .contact-information .content-box {
   padding-right: 30px;
@@ -110,6 +131,11 @@ header .container .menu .main-menu {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+}
+@media (min-width) {
+  header .container .menu .main-menu {
+    display: block;
+  }
 }
 header .container .menu .main-menu nav a {
   display: inline-block;
@@ -141,12 +167,22 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   justify-content: space-between;
   align-items: center;
 }
+.showcase .container .content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: left;
+  }
+}
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 86px;
+  font-size: 40px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .showcase .container .content h1 {
     font-size: 66px;
   }
@@ -162,8 +198,94 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   padding-bottom: 40px;
 }
 .showcase .container .content a {
-  margin-right: 10px;
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content a {
+    margin-right: 10px;
+    display: inline-block;
+  }
 }
 .showcase .container img {
+  display: none;
   margin-right: -50px;
+}
+@media (min-width: 992px) {
+  .showcase .container img {
+    display: block;
+  }
+}
+
+.brands .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 72px;
+  margin-bottom: 80px;
+}
+
+.box {
+  width: 1520px;
+  height: 600px;
+  background-color: transparent;
+  border: 1px solid rgba(25, 25, 25, 0.2);
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.box .features {
+  width: 600px;
+  padding-left: 100px;
+  padding-top: 80px;
+}
+.box .features p {
+  color: #f94d1c;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.box .features h1 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  color: #191919;
+  padding-bottom: 50px;
+}
+.box .features a {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.box .services {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "business  start-up " "advice  manegment ";
+  padding-left: 70px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.box .services .business a {
+  color: #f94d1c;
+  margin-bottom: 40px;
+}
+.box .services h1 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  padding-top: 40px;
+}
+.box .services p {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 25px;
 }
