@@ -632,6 +632,198 @@ header {
 }
 
 
+.service {
+    background-color: #F0EFE9;
+    padding-bottom: 200px;
+    .container{
+        .section-title{
+            padding-top: 120px;
+            padding-bottom: 50px;
 
+        }
+        .services-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            .box-1{
+                position: relative;
+                height: 333px;
+                width: 308px;
+                background-color: #ffffff;
+                p {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    
+                    
+                }
+                h1{
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 33px;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                }
+                h2{
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    
+                   
+                    color: rgba(25,25,25,0.7 );
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    //justify-content: right;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 35px;
+                    color: #191919;
+                    
+                }
+            }
+            .box-2{
+                position: relative;
+                height: 333px;
+                width: 308px;
+                background-color: #F9D783;
+                p {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    
+                    
+                }
+                h1{
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 33px;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                }
+                h2{
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    
+                   
+                    color: rgba(25,25,25,0.7 );
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    //justify-content: right;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 35px;
+                    
+                    
+                    
+                }
+                
+            }
+            .box-3{
+                position: relative;
+                height: 333px;
+                width: 308px;
+                background-color: #ffffff;
+                p {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    
+                    
+                }
+                h1{
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 33px;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                }
+                h2{
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    
+                   
+                    color: rgba(25,25,25,0.7 );
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    //justify-content: right;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 35px;
+                    color: #191919;
+                    
+                }
+                
+            }
+            .box-4{
+                position: relative;
+                height: 333px;
+                width: 308px;
+                background-color: #ffffff;
+                p {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    
+                    
+                }
+                h1{
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 33px;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                }
+                h2{
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    
+                   
+                    color: rgba(25,25,25,0.7 );
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    //justify-content: right;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 35px;
+                    color: #191919;
+                    
+                }
+                
+            }
+
+        }
+        .button-down{
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+        }
+    }
+}
   
 
