@@ -194,7 +194,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .showcase {
-  background-color: #f0e9ed;
+  background-color: #F0EFE9;
   position: relative;
   z-index: 0;
 }
@@ -660,8 +660,14 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   }
 }
 .why-choose-us .container .text-section .section-title {
+  text-align: center;
   padding-top: 60px;
   padding-right: 100px;
+}
+@media (min-width: 768px) {
+  .why-choose-us .container .text-section .section-title {
+    text-align: left;
+  }
 }
 .why-choose-us .container .text-section .subjects .p1 {
   display: flex;
@@ -755,10 +761,16 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   position: relative;
 }
 .why-choose-us .container .image-section .photo {
+  display: none;
   padding-top: 90px;
   padding-left: 0px;
   z-index: 0;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  .why-choose-us .container .image-section .photo {
+    display: block;
+  }
 }
 .why-choose-us .container .image-section .gray-box {
   display: none;
@@ -815,6 +827,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-weight: 500;
   text-decoration: none;
   color: #191919;
+}
+.project-and-cases .container .cases article a:hover {
+  text-decoration: underline;
 }
 .project-and-cases .container .cases article i {
   margin-left: 3px;
@@ -1069,6 +1084,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  padding: 20px 0px;
 }
 @media (min-width: 768px) {
   .news-letter .container {
@@ -1089,6 +1105,11 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .news-letter .container form {
   display: grid;
   grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .news-letter .container form {
+    display: flex;
+  }
 }
 .news-letter .container form input {
   border: 1px solid rgba(25, 25, 25, 0.1);
