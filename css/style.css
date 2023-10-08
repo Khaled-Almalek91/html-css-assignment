@@ -82,7 +82,7 @@ html, body {
 }
 
 header {
-  background-color: #f0e9ee;
+  background-color: #F0EFE9;
   padding: 16px;
 }
 header .container {
@@ -836,9 +836,6 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
     justify-content: space-between;
     align-items: center;
   }
-  .meet-our-team .container .photos .mark {
-    width: 50%;
-  }
 }
 .meet-our-team .container .photos .kristin img {
   padding-bottom: 25px;
@@ -852,6 +849,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-family: "Inter";
   font-size: 16px;
   font-weight: 500;
+}
+.meet-our-team .container .photos .mark {
+  background-color: transparent;
 }
 .meet-our-team .container .photos .mark img {
   padding-bottom: 25px;
@@ -892,6 +892,59 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 16px;
   font-weight: 500;
 }
+.meet-our-team .container .page-dots {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.reviews-section {
+  background-color: #EDCF87;
+}
+.reviews-section .container {
+  background-color: #FFFFFF;
+}
+.reviews-section .container .section-title {
+  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.reviews-section .container .openions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+}
+.reviews-section .container .openions .stars {
+  padding-bottom: 30px;
+}
+.reviews-section .container .openions h2 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: normal;
+}
+.reviews-section .container .openions .image-name {
+  display: flex;
+  align-items: center;
+}
+.reviews-section .container .openions .image-name .on {
+  size: 10px;
+}
+.reviews-section .container .openions .name-role {
+  padding-left: 20px;
+}
+.reviews-section .container .openions p {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+}
+.reviews-section .container .openions h3 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  color: #F94D1C;
+}
 
 .let-conect {
   background-color: #F0EFE9;
@@ -904,8 +957,12 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   z-index: -1;
 }
 .let-conect .container {
-  margin-bottom: 120px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .let-conect .container {
+    margin-bottom: 120px;
+  }
 }
 .let-conect .container h2 {
   padding: 130px 0px 90px 0px;
@@ -915,9 +972,21 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .information .container {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
+  .information .container {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .information .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
   .information .container {
     display: flex;
     justify-content: space-between;
@@ -931,7 +1000,12 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 @media (min-width: 768px) {
   .information .container > div {
-    padding: 50px 80px;
+    padding: 30px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .information .container > div {
+    padding: 40px 70px;
   }
 }
 .information .container > div .icon {
@@ -953,8 +1027,117 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 
 .message .container {
   background-color: #F0EFE9;
-  align-items: center;
+  padding-top: 125px;
 }
 .message .container h2 {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+}
+.message .container .input-info {
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .message .container .input-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 150px;
+  }
+}
+.message .container .input-info input {
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.message .container .input-info #M {
+  padding-bottom: 150px;
+}
+@media (min-width: 768px) {
+  .message .container .button-sendMessage {
+    padding: 20px 150px;
+  }
+}
+.message .container .button-sendMessage .btn-yellow {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .map {
+    margin-top: 120px;
+  }
+}
+.map img {
+  max-width: 100%;
+  min-width: 100%;
+}
+@media (min-width: 768px) {
+  .map img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+footer {
+  background-color: #0E1021;
+  padding-top: 110px;
+}
+@media (min-width: 768px) {
+  footer .container .topics {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+  }
+}
+footer .container .topics .crito {
+  width: 300px;
+}
+footer .container .topics .crito h2 {
+  padding-top: 30px;
+  padding-right: 35px;
+}
+footer .container .topics p {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+footer .container .topics h2 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+footer .last-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.337254902);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .last-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+}
+footer .last-row h3 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .last-row .social-media a {
+  padding-left: 25px;
+  color: #FFFFFF;
 }
