@@ -1713,7 +1713,10 @@ footer{
                 font-size: 22px;
                 font-weight: bold;
                 color: #ffffff;
-                padding-bottom: 30px;
+                padding-bottom: 5px;
+                @media(min-width: 768px){
+                    padding-bottom: 30px;
+                }
             }
             h2{
                 font-family: "Inter";

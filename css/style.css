@@ -1280,7 +1280,12 @@ footer .container .topics p {
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
+}
+@media (min-width: 768px) {
+  footer .container .topics p {
+    padding-bottom: 30px;
+  }
 }
 footer .container .topics h2 {
   font-family: "Inter";
